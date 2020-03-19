@@ -1,5 +1,5 @@
-name: ItemDamage
+name: JoinTotemAction
 version: 1
-main: Eren5960\ItemDamage\Main
+main: Eren5960\JoinTotemAction\Main
 api: 3.11.1
 author: Eren5960

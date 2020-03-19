@@ -9,11 +9,11 @@
  *
  * @author Eren5960
  * @link https://github.com/Eren5960
- * @date 17 Mart 2020
+ * @date 19 Mart 2020
  */
 declare(strict_types=1);
  
-namespace Eren5960\ItemDamage\update;
+namespace Eren5960\JoinTotemAction\update;
  
 use pocketmine\plugin\PluginDescription;
 use pocketmine\Server;
@@ -47,7 +47,7 @@ class Update{
 
 	public function check(): void{
 		if($this->needUpdate()){
-			Server::getInstance()->getLogger()->alert("ItemDamage new version is available!");
+			Server::getInstance()->getLogger()->alert($this->data->getName(). " new version is available!");
 			Server::getInstance()->getLogger()->alert("Download from §7https//github.com/§eeren5960§7/§6" . $this->data->getName() . "§c the new version.");
 		}
 	}
